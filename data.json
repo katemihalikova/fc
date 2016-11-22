@@ -1,7 +1,9 @@
 {
   "users": [
-    {"user": "katemihalikova", "nickname": "Kate", "fc": "1392-6736-1635", "sunOrMoon": "both"}
+    {"user": "katemihalikova", "nickname": "Kate", "fc": "1392-6736-1635", "sunOrMoon": "both"},
+    {"user": "charlotteis", "nickname": "charcharis", "fc": "3497-4360-5044", "sunOrMoon": "moon"}
   ],
   "links": [
+    {"source": "charlotteis", "target": "katemihalikova"}
   ]
 }
