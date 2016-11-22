@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "title": "Username, preferrably WeAllJS or GitHub one",
+            "type": "string"
+          },
+          "nickname": {
+            "title": "3DS nickname",
+            "type": "string"
+          },
+          "fc": {
+            "title": "3DS friend code",
+            "type": "string"
+          },
+          "sunOrMoon": {
+            "title": "Owned Pokémon version (optional)",
+            "type": "string",
+            "enum": [
+              "sun",
+              "moon",
+              "both"
+            ]
+          }
+        },
+        "required": [
+          "user",
+          "nickname",
+          "fc"
+        ]
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "title": "User initiating the friendship",
+            "type": "string"
+          },
+          "target": {
+            "title": "User confirming the friendship",
+            "type": "string"
+          },
+          "pending": {
+            "title": "The friendship is still pending, waiting for the target user to add the source user",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "source",
+          "target"
+        ]
+      }
+    }
+  },
+  "required": [
+    "users",
+    "links"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "fc",
+  "private": true,
+  "scripts": {
+    "test": "ajv -s data.schema.json -d data.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katemihalikova/fc.git"
+  },
+  "author": "Kate Miháliková <kate@katemihalikova.cz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katemihalikova/fc/issues"
+  },
+  "homepage": "https://github.com/katemihalikova/fc#readme",
+  "devDependencies": {
+    "ajv-cli": "^1.1.1"
+  }
+}
